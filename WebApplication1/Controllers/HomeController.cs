@@ -13,10 +13,7 @@ namespace WebApplication1.Controllers
             return View();
         }
 
-       public ActionResult ProductsList()
-        {
-            return View();
-        }
+       
 
         public ActionResult DownloadFile()
         {

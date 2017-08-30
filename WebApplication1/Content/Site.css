@@ -20,6 +20,7 @@
 }
 
 .main-header {
+    margin-top: 5px;
     margin-bottom: 20px;
     color: #000000;
 }
@@ -77,6 +78,20 @@
 .catalogue .back-img {
     display: block;
     margin: auto;
+}
+
+.catalogue .opacity {
+    opacity: 0.5;
+}
+
+.opacity:hover {
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    opacity: 1;
+    filter: alpha(opacity=100);
 }
 
 
