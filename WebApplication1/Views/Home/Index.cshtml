@@ -1,0 +1,51 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@section Header {
+    <header class="main-header row">
+        <div class="container">
+            Site Header
+            <div class="reg-form">
+                @using (Html.BeginForm("Index", "Home"))
+                {
+                    <p>RegisterForm</p>
+                    <input type="submit" />
+                }
+            </div>
+
+        </div>
+    </header>
+}
+
+@section Body {
+    <main class="main-container">
+        <div class="container">
+            <div class="promo">
+                <div class="news">
+                    <h3>Новости</h3>
+                </div>
+                <div class="catalogue">
+                    <h3>Каталог</h3>
+                    <div class="image-wrap">
+                        <img src="~/Content/catalogue-background.jpg" alt="Картинка для каталога"  width="250" class="back-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+}
+
+@section Footer {
+
+    <footer class="main-footer row">
+        <div class="container">
+            <div class="download-footer">
+                @Html.ActionLink("Скачать файл", "DownloadFile")
+            </div>
+            
+        </div>
+    </footer>
+
+
+}
